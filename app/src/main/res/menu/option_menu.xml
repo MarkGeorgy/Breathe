@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/notificationON"
+        android:title="Start/Stop Notification"
+        app:showAsAction="never" ></item>
+
+    <item
+        android:id="@+id/seeGraphs"
+        android:title="Graphical View"
+        app:showAsAction="never" ></item>
+
+</menu>

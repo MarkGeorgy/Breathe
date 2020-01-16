@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".WelcomeActivity">
+
+    <Button
+        android:id="@+id/scanAirQualityButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="317dp"
+        android:background="@drawable/air_quality" />
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="Press the icon below to connect to Bluetooth"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bluetoothButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="123dp"
+        android:background="@drawable/ic_bluetooth_connected_black_24dp"
+        android:onClick="onClickStart"
+        android:textSize="18sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/addReminderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="319dp"
+        android:layout_marginLeft="319dp"
+        android:layout_marginBottom="46dp"
+        android:backgroundTint="#71bbff"
+        android:clickable="true"
+        android:tint="#ffffff"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:id="@+id/reminderTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="33dp"
+        android:layout_marginRight="33dp"
+        android:layout_marginBottom="16dp"
+        android:text="Reminder"
+        android:textColor="#71bbff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bluetoothButton"
+        android:layout_alignStart="@+id/bluetoothButton"
+        android:layout_alignLeft="@+id/bluetoothButton"
+        android:layout_alignEnd="@+id/bluetoothButton"
+        android:layout_alignRight="@+id/bluetoothButton"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:background="@drawable/circle"
+        android:onClick="onClickStart"
+        android:text="CONNECT"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/scanAirQualityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scanAirQualityButton"
+        android:layout_alignStart="@+id/scanAirQualityButton"
+        android:layout_alignLeft="@+id/scanAirQualityButton"
+        android:layout_alignEnd="@+id/scanAirQualityButton"
+        android:layout_alignRight="@+id/scanAirQualityButton"
+        android:layout_marginStart="-38dp"
+        android:layout_marginLeft="-38dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="-35dp"
+        android:layout_marginRight="-35dp"
+        android:background="@drawable/circle"
+        android:text="SCAN AIR QUALITY"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
